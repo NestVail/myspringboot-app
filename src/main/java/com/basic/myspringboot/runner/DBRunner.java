@@ -16,7 +16,7 @@ public class DBRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("DataSource Class Name" + dataSource.getClass().getName());
+        System.out.println("DataSource Class Name: " + dataSource.getClass().getName());
         //Ctrl + alt + v: return type auto implement
         Connection connection = dataSource.getConnection();
         DatabaseMetaData metaData = connection.getMetaData();
