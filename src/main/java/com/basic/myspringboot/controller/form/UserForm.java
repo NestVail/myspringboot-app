@@ -5,11 +5,13 @@ import lombok.Setter;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 
 @Getter @Setter
+//@ToString
 public class UserForm {
-    @NotEmpty(message = "name field cannot be empty")
+    private Long id;
+
+    @NotBlank(message = "name field cannot be empty")
     private String name;
 
     @NotBlank(message = "email field cannot be empty or blank")
