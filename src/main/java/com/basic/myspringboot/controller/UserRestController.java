@@ -17,7 +17,7 @@ public class UserRestController {
         this.userService = userService;
     }
 
-    @PostMapping("/users")
+    @PostMapping("/add")
     public User addUser(@RequestBody User user) {
         return userService.insertUser(user);
     }
